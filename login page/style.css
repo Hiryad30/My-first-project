@@ -1,0 +1,105 @@
+* {
+  padding: 0%;
+  margin: 0%;
+}
+
+#bar {
+  font-family: "Bree Serif", serif;
+  display: flex;
+  position: relative;
+}
+
+#bar::before {
+  content: "";
+  background-color: rgba(188, 143, 143);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0mm;
+  left: 0mm;
+  z-index: -1;
+  opacity: 0.678;
+}
+
+.container {
+  display: flex;
+  margin: 10px 0px;
+  align-items: center;
+}
+
+.container h1 a {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.container h1 a:hover {
+  color: rgba(0, 0, 0, 0.493);
+}
+
+.container img {
+  height: 50px;
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 21px;
+  margin-left: 300px;
+}
+
+.navbar ul li a {
+  margin: 15px;
+  font-size: 1.2rem;
+  font-family: "Baloo Bhai 2", cursive;
+  color: white;
+  padding: 10px;
+}
+
+.navbar ul li a:hover {
+  color: rgba(0, 0, 0, 0.493);
+  background-color: blanchedalmond;
+  color: rgba(68, 68, 68, 0.678);
+  border-radius: 20px;
+}
+
+#nav {
+  position: relative;
+  display: flex;
+  height: 670px;
+  width: 1500px;
+  justify-content: center;
+  align-items: center;
+  font-family: "Bree Serif", serif;
+}
+
+#first {
+  position: relative;
+}
+
+#first:before {
+  content: "";
+  background: url(brooke-lark-jUPOXXRNdcA-unsplash.jpg) no-repeat center
+    center/cover;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+#nav h1 {
+  color: honeydew;
+  margin: 30px;
+  padding: 0px;
+  cursor: pointer;
+}
+
+.main h1 a{
+    font-size: 1.7rem;
+    color: white;
+    text-decoration:none;
+}

@@ -1,0 +1,264 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.bar {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  background-color: rgba(188, 143, 143, 0.678);
+}
+#nav {
+  position: relative;
+  border-radius: 20px;
+}
+#nav::before {
+  content: "";
+  background-color: rgba(188, 143, 143, 0.678);
+  position: absolute;
+  height: 100%;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.4;
+}
+.photo {
+  display: flex;
+  height: 53px;
+  width: 200px;
+  cursor: pointer;
+  font-size: 1.3rem;
+}
+#pack {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+#nav div a:hover {
+  color: rgba(68, 68, 68, 0.678);
+}
+
+.menu {
+  display: flex;
+  text-decoration: none;
+  margin-left: 320px;
+  list-style: none;
+  font-size: 1.2rem;
+}
+.items a {
+  text-decoration: none;
+  color: rosybrown;
+}
+#nav ul li a {
+  font-family: "Baloo Bhai 2", cursive;
+  display: block;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+#nav ul li a:hover {
+  border-radius: 15px;
+  background-color: blanchedalmond;
+  color: rgba(0, 0, 0, 0.493);
+}
+#home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 630px;
+  flex-direction: column;
+  padding: 4px 200px;
+}
+#home::before {
+  content: "";
+  background: url(img/davide-cantelli-jpkfc5_d-DI-unsplash.jpg) no-repeat center
+  center/cover;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.8;
+  border-radius: 20px;
+}
+/* utility classes */
+.hprimary {
+  font-family: "Bree Serif", serif;
+  font-size: 3rem;
+  padding: 20px;
+}
+.hsecondary {
+  font-family: "Bree Serif", serif;
+  font-size: 2.5rem;
+}
+.center {
+  text-align: center;
+}
+#home h1 {
+  color: black;
+  text-align: center;
+}
+#home p {
+  font-family: "Bree Serif", serif;
+  text-align: center;
+  font-size: 1rem;
+}
+
+#home button {
+  font-family: "Bree Serif", serif;
+  margin: 17px;
+  border-radius: 20px;
+  padding: 7px 20px;
+  cursor: pointer;
+  background-color: rgba(188, 143, 143, 0.678);
+  border: 2px solid white;
+  font-size: 1rem;
+}
+/* service container */
+#servicescontainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 50px;
+}
+.box img {
+    height: 100px;
+    display: block;
+    margin: auto;
+    padding: 10px 0px;
+}
+/* .box:nth-child(2):before{
+    content: "";
+    background: url(img/lily-banse--YHSwy6uqvk-unsplash.jpg) no-repeat center center/cover;
+    background-color: wheat;
+    position: absolute;
+    height: 40%;
+    border-radius: 23px;
+    width: 27%;
+    z-index: -1;
+    opacity: 0.8;
+} */
+
+.box img{
+  border-radius: 125px;
+  box-shadow: wheat;
+}
+
+.box::before{
+    content: "";
+    /* background: url(img/lily-banse--YHSwy6uqvk-unsplash.jpg) no-repeat center center/cover; */
+    background-color: wheat;
+    position: absolute;
+    height: 40%;
+    border-radius: 23px;
+    width: 27%;
+    z-index: -1;
+    opacity: 0.8;
+}
+#services {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+}
+#services .box {
+    margin: 0px 30px;
+    border: 2px solid rgba(188, 143, 143, 0.678);
+    padding: 10px;
+    border-radius: 23px;
+}
+#services .box p{
+    font-family: "Bree Serif", serif;
+    padding: 5px;
+}
+#contact{
+    margin-top: 20px;
+}
+#contact::before{
+    content: "";
+    position:absolute;
+    background: url(img/coffee-3297995.jpg) no-repeat center center/cover;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    opacity: 0.8;
+    border-radius: 20px;
+}
+
+#contact form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 600px;
+}
+
+#contact div form input{
+  margin: 10px;
+  font-size: 1.3rem;
+  background: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid white;
+}
+
+#contact .class1 :hover{
+  border-bottom: 2px solid rgba(188, 143, 143, 0.678);
+}
+
+#contact div form button{
+  display: inline-block;
+  font-size: 1.1rem;
+  border-radius: 20px;
+  padding: 5px 20px;
+  background: transparent;
+  cursor: pointer;
+}
+
+#contact div form button:hover{
+  background-color: rgba(188, 143, 143, 0.678);
+  color: white;
+}
+
+#downbar{
+  display: flex;
+  background:linear-gradient(rgba(188, 143, 143),white);
+  font-family:"Bree Serif", serif;
+  border-radius: 20px;
+}
+
+#downbar div ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#down h2{
+  font-size: 1.5rem;
+  align-items: center;
+  margin-top: 10px;
+  margin-left: 30px;
+}
+
+#downbar div ul li {
+  font-size: 1.0rem;
+  margin: 10px;
+}
+#downbar div ul li i{
+  margin-right: 5px;
+}
+#downbar .left{
+  margin-left:920px ;
+  margin-top: 60px;
+}
+
+#downbar .left p{
+  display: flex;
+  padding: 1px;
+}
